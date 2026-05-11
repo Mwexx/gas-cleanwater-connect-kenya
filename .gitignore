@@ -1,0 +1,121 @@
+# Environment Variables - CRITICAL SECURITY
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example (don't commit secrets)
+
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*/dist/
+*/build/
+.next/
+.expo/
+.expo-shared/
+
+# Compiled files
+*.tsbuildinfo
+*.js
+*.jsx
+!**/*.config.js
+!**/*.config.jsx
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.local.swp
+
+# Testing
+coverage/
+.coverage/
+*.lcov
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Mobile & Native
+ios/Pods/
+android/build/
+android/.gradle/
+.gradle/
+.m2/
+
+# Prisma
+prisma/migrations/dev.db
+prisma/*.db
+prisma/*.sqlite
+prisma/*.sqlite-journal
+
+# Database backups and sensitive data
+*.sql
+*.db
+*.sqlite
+*.sqlite3
+*.backup
+*.bak
+
+# Private keys and certificates
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+private/
+
+# API Keys and secrets (catch-all)
+**/secrets/
+**/credentials/
+**/*-secret*
+**/*-key*
+
+# Redis data
+dump.rdb
+appendonly.aof
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Expo
+.expo-shared/
+
+# React Native
+watchman-dev.json
+
+# Misc
+.pem
+.key
+.p8
