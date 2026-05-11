@@ -1,14 +1,9 @@
-import express from 'express';
-import cors from 'cors';
-import authRoutes from './routes/auth.routes';
-import businessRoutes from './routes/business.routes';
-import paymentRoutes from './routes/payment.routes';
-import adminRoutes from './routes/admin.routes';
-const app = express();
-app.use(cors());
-app.use(express.json());
-app.use('/api/auth', authRoutes);
-app.use('/api/businesses', businessRoutes);
-app.use('/api/payments', paymentRoutes);
-app.use('/api/admin', adminRoutes);
-app.listen(process.env.PORT || 4000, () => console.log(`✅ Backend running on port ${process.env.PORT}`));
+import app from './app';
+
+const port = Number(process.env.PORT || 4000);
+
+if (process.env.VERCEL !== '1') {
+	app.listen(port, () => console.log(`✅ Backend running on port ${port}`));
+}
+
+export default app;
