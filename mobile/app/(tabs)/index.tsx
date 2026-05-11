@@ -1,4 +1,4 @@
-import { View, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, StyleSheet, ActivityIndicator, Text } from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import { useEffect, useState } from 'react';
 import * as Location from 'expo-location';
